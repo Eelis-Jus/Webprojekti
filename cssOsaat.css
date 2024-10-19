@@ -1,0 +1,73 @@
+body {
+    background-color: gray;
+  }
+.header {
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    top: 5px;
+  }  
+
+#painike{
+  border-radius: 4px;
+  }
+#myBtn{
+    border-radius: 4px;
+    }
+
+.mainbody{
+  
+  text-align: left;
+  padding: 0px;
+  top: 16%;
+  position: absolute;
+  width: 60vw;
+}
+table.taulukko{
+width: 50%;
+margin-left: 5%;
+  margin-right: 5%;
+}
+img{
+  float: left;
+  top: 0%;
+}
+h1.head{
+  color: rgb(190, 187, 187);
+  margin-top: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: "Lucida Console", "Courier New", monospace;
+
+}
+p.hr{
+  margin-top: 3%;
+  color: rgb(190, 187, 187);
+}
+p.aika{
+  color: white;
+  margin-top: 20%;
+}
+
+p.henkilökuva{
+  color:rgb(255, 255, 255);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 20px;
+  border: 1px solid black;
+  font-style: oblique;
+}
+.pöytä{
+margin-top: 10%;
+margin-left: 22%;
+margin-right: 20%;
+margin-bottom: 60%;
+}
+.projecttable, th, td{
+  border:1px solid rgb(255, 255, 255);
+  height: 20%;
+}
+#latausteksti{
+  color:rgb(255, 255, 255);
+  font-style: oblique;
+}

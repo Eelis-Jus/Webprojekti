@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Eelis Jussila Kotisivu</title>
+<link rel="stylesheet" href="cssOsaat.css">
+</head>
+<body onload="setTimeout(load, 3000)">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="jskoodi.js"></script>
+
+<div class="header">
+    <h1 class="head">Eelis Jussila Kotisivu</h1>
+    <p class="hr"><i> Tervetuloa kotisivuilleni, täällä kerron itsestäni ja omasta osaamisestani</i></p>
+  </div>
+
+<div class="mainbody">  
+ <ul class ="nurkka">
+  <li><h1 style="color: blue; font-size: 100%; "> <a href="https://github.com/Eelis-Jus">Linkki githubiini</a></h1></li>
+  <li>
+    <button id="painike">projektipöytä</button>
+    </li>
+  <li><input type="text" id="pokemoninNimi" placeholder="Anna pokemonin nimi"></li>
+  <li> <button  id="myBtn">Hae Pokemoni</button><br></li>
+  <li><img src="" alt="Pokemonin Kuva" id="pokemoninKuva" style="display: none"></li>
+  <li><p class="aika" id="demo">paikallinen aikasi: </p></li>
+</ul>
+</div>
+<script>
+  document.getElementById("myBtn").addEventListener("click", fetchdata);
+  document.getElementById("painike").addEventListener("click", myfunction);
+  document.getElementById("demo").addEventListener("onload", setInterval(myTimer, 1000));
+
+</script>
+<div class="pöytä">
+<h1 id="latausteksti" style="visibility: visible;">Nettisivu on latautunut</h1>
+<p class="henkilökuva">Opiskelen tällä hetkellä OAMK:ssa toista vuotta tieto-ja viestintätekniikkaa. Aiempia isompia projekteja joita olen tehnyt oli QTwidget pankkiautomaatti, johon tehtiin backend node.js:llä.
+  Kesällä opiskelin pythonin perusteita ja siitä innostuneena tein pienen datakäsittely ohjelman pythonilla ja sen pandas kirjastolla. Tällä hetkellä tämä on yksi isoimmista projekteista joita olen tehnyt.
+  Tässä käytössä oli HTML,CSS ja Javascript. Ensimmäisenä vuonna teimme myös arduinolla elektroniikan projektin Speden spelit. Vasemmalla näet oman paikallisen aikasi, linkin githubiini, sekä voit katsoa 
+  taulukon projekteistani ja jos haluat, niin voit hakea kuvan pokemonista </p>
+  <table class="taulukko" id="projecttable" style="visibility: hidden;">
+    <tr>
+      <th style="color: white;">Projekti</th>
+      <th style="color: white;">Koulu vain henkilökohtainen ?</th>
+      <th style="color: white;">Käytetty kieli</th>
+    </tr>
+    <tr>
+      <td style="color: white;">Pankkiautomaatti sovellus</td>
+      <td style="color: white;">Kouluprojekti</td>
+      <td style="color: white;">node.js ja c++/QTwidget</td>
+    </tr>
+    <tr>
+      <td style="color: white;">Alkeellinen datankäsittely sovellus</td>
+      <td style="color: white;">Henkilökohtainen</td>
+      <td style="color: white;">Python</td>
+    </tr>
+    <tr>
+      <td style="color: white;">Oma nettisivu</td>
+      <td style="color: white;">Kouluprojekti</td>
+      <td style="color: white;">Javascript,HTML,CSS</td>
+    </tr>
+    </table>
+</div>  
+
+</body>
+</html>
